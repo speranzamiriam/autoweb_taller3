@@ -1,0 +1,199 @@
+-------------------------------------------------------------------------------
+Test set: com.pe.prueba.cucumber.runners.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 26.726 s <<< FAILURE! - in com.pe.prueba.cucumber.runners.CucumberTestSuite
+Crear cuenta de usuario de manera exitosa #1(Funcionalidad Crear cuenta linio)  Time elapsed: 0.133 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que yo ingreso a la aplicacion de linio' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que yo ingreso a la aplicacion de linio")
+public void que_yo_ingreso_a_la_aplicacion_de_linio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo me registro en la aplicaci?n de linio")
+public void yo_me_registro_en_la_aplicaci?n_de_linio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("yo visualizo le mensaje de creacion exitosa")
+public void yo_visualizo_le_mensaje_de_creacion_exitosa() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Crear cuenta de usuario de manera exitosa #1(Funcionalidad Crear cuenta linio)  Time elapsed: 0.134 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'p07lhm00058cco', ip: 'fe80:0:0:0:c45:a3f0:e944:77fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/10/n4ckqm493bv...}, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
+Crear cuenta de usuario de manera exitosa #2(Funcionalidad Crear cuenta linio)  Time elapsed: 0.022 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que yo ingreso a la aplicacion de linio' and 9 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que yo ingreso a la aplicacion de linio")
+public void que_yo_ingreso_a_la_aplicacion_de_linio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi nombre Erick en el campo name")
+public void yo_ingreso_mi_nombre_erick_en_el_campo_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi apellido Montes")
+public void yo_ingreso_mi_apellido_montes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi correo monteserick199@gmail.com")
+public void yo_ingreso_mi_correo_monteserick199_gmail_com() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi contrase?a {int}")
+public void yo_ingreso_mi_contrase?a(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("selecciono el tipo de documento DNI")
+public void selecciono_el_tipo_de_documento_dni() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("ingreso mi numero de documento {int}")
+public void ingreso_mi_numero_de_documento(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("selecciono la politica de privacidad y terminos condiciones")
+public void selecciono_la_politica_de_privacidad_y_terminos_condiciones() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo le doy click en Completar Registro")
+public void yo_le_doy_click_en_completar_registro() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("yo visualizo le mensaje de creacion exitosa")
+public void yo_visualizo_le_mensaje_de_creacion_exitosa() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Crear cuenta de usuario de manera exitosa #2(Funcionalidad Crear cuenta linio)  Time elapsed: 0.022 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'p07lhm00058cco', ip: 'fe80:0:0:0:c45:a3f0:e944:77fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/10/n4ckqm493bv...}, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
+Crear cuenta de usuario de manera exitosa #3(Funcionalidad Crear cuenta linio)  Time elapsed: 0.016 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que yo ingreso a la aplicacion de linio' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que yo ingreso a la aplicacion de linio")
+public void que_yo_ingreso_a_la_aplicacion_de_linio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi datos Erick, Montes, monteserick199@gmail.com, {int}, DNI, {int} a registrar")
+public void yo_ingreso_mi_datos_erick_montes_monteserick199_gmail_com_dni_a_registrar(Integer int1, Integer int2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("yo visualizo le mensaje mensaje1 de creacion exitosa")
+public void yo_visualizo_le_mensaje_mensaje1_de_creacion_exitosa() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("yo valido el tipo de documento DNI")
+public void yo_valido_el_tipo_de_documento_dni() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Crear cuenta de usuario de manera exitosa #3(Funcionalidad Crear cuenta linio)  Time elapsed: 0.016 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'p07lhm00058cco', ip: 'fe80:0:0:0:c45:a3f0:e944:77fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/10/n4ckqm493bv...}, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
+Crear cuenta de usuario de manera errada #1(Funcionalidad Crear cuenta linio)  Time elapsed: 0.01 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que yo ingreso a la aplicacion de linio' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que yo ingreso a la aplicacion de linio")
+public void que_yo_ingreso_a_la_aplicacion_de_linio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi datos Erick, , monteserick199@gmail.com, {int}, Cedula de Extranjeria, {int} a registrar")
+public void yo_ingreso_mi_datos_erick_monteserick199_gmail_com_cedula_de_extranjeria_a_registrar(Integer int1, Integer int2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("yo visualizo le mensaje Falto el apellido de creacion errada")
+public void yo_visualizo_le_mensaje_falto_el_apellido_de_creacion_errada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Crear cuenta de usuario de manera errada #1(Funcionalidad Crear cuenta linio)  Time elapsed: 0.011 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'p07lhm00058cco', ip: 'fe80:0:0:0:c45:a3f0:e944:77fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/10/n4ckqm493bv...}, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
+Crear cuenta de usuario de manera errada #2(Funcionalidad Crear cuenta linio)  Time elapsed: 0.009 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'que yo ingreso a la aplicacion de linio' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("que yo ingreso a la aplicacion de linio")
+public void que_yo_ingreso_a_la_aplicacion_de_linio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("yo ingreso mi datos Erick, Montes, , {int}, Pasaporte, {int} a registrar")
+public void yo_ingreso_mi_datos_erick_montes_pasaporte_a_registrar(Integer int1, Integer int2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("yo visualizo le mensaje Falto el correo de creacion errada")
+public void yo_visualizo_le_mensaje_falto_el_correo_de_creacion_errada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Crear cuenta de usuario de manera errada #2(Funcionalidad Crear cuenta linio)  Time elapsed: 0.011 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'p07lhm00058cco', ip: 'fe80:0:0:0:c45:a3f0:e944:77fe%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.177, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /var/folders/10/n4ckqm493bv...}, goog:chromeOptions: {debuggerAddress: localhost:58614}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58614/devtoo..., se:cdpVersion: 110.0.5481.177, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
