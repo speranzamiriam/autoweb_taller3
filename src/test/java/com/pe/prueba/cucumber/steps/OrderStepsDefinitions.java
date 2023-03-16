@@ -6,34 +6,37 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class OrderStepsDefinitions {
 
     OrderActions order = new OrderActions();
 
-    @Given("^que ingreso a la aplicacion demoblaze$")
-    public void queIngresoALaAplicacionDemoBlaze() {
+    @Given("^que ingreso a la aplicacion globalsqa$")
+    public void queIngresoALaAplicacionGloblaSqa() {
         HelperClass.openPage();
     }
 
-    @And("^seleccionamos el primer producto$")
-    public void seleccionamosElPrimerProducto() {
-        order.selectProduct();
+    @And("^seleccionamos en el menu samplepage$")
+    public void seleccionamosElMenuSamplePage() {
+        order.selectMenuSamplePage();
     }
 
-    @When("^yo agrego el producto al carrito de compras$")
-    public void yoAgregoElProductoAlCarritoDeCompras() {
-        order.addToCart();
+    @When("^yo ingreso mis datos mi name (.*)  mi email (.*)  mi web site (.*) , mi experiencia (.*), expertice (.*) , mi comentario (.*) y mi educacion (.*)$")
+    public void yoAgregoElProductoAlCarritoDeCompras(String name,String email,String webSite,String experience,String expertice ,String comment,String education) {
+        order.llenarFormSimpleTest(name,email,webSite,experience,expertice,comment,education);
+
     }
 
-    @And("^yo ingreso mis datos mi nombre (.*) y mi tarjeta (.*)$")
-    public void yoIngresoMisDatosMiNombreNombreYMiTarjetaCards(String name, String cards) {
-        order.placeOrder(name, cards);
-    }
+    @Then("^yo valido que se genera una visualizacion de mis datos (.*) , (.*) , (.*) , (.*) , (.*) , (.*) , (.*)$")
+    public void yoValidoQueSeGeneraLaOrdenCorrectamenteConMisDatosNombreYCards(String name,String email,String webSite,String experience,String expertice ,String comment,String education) {
+        Assert.assertTrue(order.validarName(name));
+        Assert.assertTrue(order.validarEmail(email));
+        Assert.assertTrue(order.validarWebSite(webSite));
+        Assert.assertTrue(order.validarExperience(experience));
+        Assert.assertTrue(order.validarCommen(comment));
+        Assert.assertTrue(order.validarExpertice(expertice));
+        Assert.assertTrue(order.validarEducation(education));
 
-    @Then("^yo valido que se genera la orden correctamente con mis datos (.*) y (.*)$")
-    public void yoValidoQueSeGeneraLaOrdenCorrectamenteConMisDatosNombreYCards(String name, String cards) {
-        order.validateName(name);
-        order.validateCards(cards);
     }
 }

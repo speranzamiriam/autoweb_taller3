@@ -13,13 +13,14 @@ public class HelperClass {
 
     public HelperClass() {
         WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
         driver.manage().window().maximize();
     }
 
     public static void openPage() {
-        driver.get("https://www.demoblaze.com/");
+        driver.get("https://www.globalsqa.com/");
     }
 
     public static WebDriver getDriver() {
