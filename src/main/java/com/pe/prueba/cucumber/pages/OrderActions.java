@@ -20,14 +20,8 @@ public class OrderActions {
     }
 
     public void selectMenuSamplePage() {
-        //waitForElement(order.product);
-        //driver.execute_script("arguments[0].focus();", order.linkMenuTester);
-        //order.linkMenuTester..isSelected();
-
 
         Actions actions = new Actions(HelperClass.getDriver());
-        //JavascriptExecutor js = (JavascriptExecutor) HelperClass.getDriver();
-        //js.executeScript("arguments[0].focus();", order.linkMenuTester);
         actions.moveToElement(order.linkMenuTester).perform();
         waitForElement(order.opcionMenuSamplePageTest);
         order.opcionMenuSamplePageTest.click();
@@ -46,15 +40,6 @@ public class OrderActions {
         order.education.click();
         order.botonSubmit.click();
 
-
-//        order.buttonAddCart.click();
-//        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));
-//        wait.until(ExpectedConditions.alertIsPresent());
-//        Alert alert = HelperClass.getDriver().switchTo().alert();
-//        alert.accept();
-//        order.linkCart.click();
-//        waitForElement(order.containerProduct);
-//        order.buttonPlaceOrder.click();
     }
 
     public boolean validarName(String name) {
@@ -82,25 +67,6 @@ public class OrderActions {
     public boolean validarEducation(String education) {
         return order.educationLbl.getText().contains(education);
     }
-
-//    public void placeOrder(String name, String cards) {
-//        waitForElement(order.nameTxt);
-//        order.nameTxt.sendKeys(name);
-//        order.countryTxt.sendKeys("Peru");
-//        order.cityTxt.sendKeys("Surquillo");
-//        order.cardTxt.sendKeys(cards);
-//        order.monthTxt.sendKeys("12");
-//        order.yeartxt.sendKeys("2024");
-//        order.buttonPurchase.click();
-//    }
-//
-//    public boolean validateName(String name) {
-//        return order.valueOrder.getText().contains(name);
-//    }
-//
-//    public boolean validateCards(String card) {
-//        return order.valueOrder.getText().contains(card);
-//    }
 
     public void waitForElement(WebElement element) {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(30));

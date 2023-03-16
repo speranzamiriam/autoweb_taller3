@@ -22,7 +22,6 @@ public class OrderPageLocators {
     @FindBy(id = "g2599-website")
     public WebElement webSiteTx;
 
-    //@FindBy(xpath = "//input[@value='"+textForFunctionalTesting+"']")
     public WebElement expertice;
     public WebElement education;
     @FindBy(id = "g2599-experienceinyears")
@@ -49,53 +48,11 @@ public class OrderPageLocators {
     @FindBy(xpath = "//div[@id='contact-form-2599']/blockquote/p[7]")
     public WebElement commentLbl;
 
-    public void cargarExpertice(WebDriver driver, String textForFunctionalTesting){
-        expertice =driver.findElement(By.xpath("//input[@value='"+textForFunctionalTesting+"']"));
+    public void cargarExpertice(WebDriver driver, String textForExpertice){
+        expertice =driver.findElement(By.xpath("//input[@value='"+textForExpertice+"']"));
     }
-    public void cargarEducation(WebDriver driver, String textForEducationText){
-        education =driver.findElement(By.xpath("//input[@value='"+textForEducationText+"']"));
+    public void cargarEducation(WebDriver driver, String textForEducation){
+        education =driver.findElement(By.xpath("//input[@value='"+textForEducation+"']"));
     }
-
-//
-
-/*
-*     driver.findElement(By.xpath("//div[@id='contact-form-2599']/h3")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p[2]")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p[3]")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p[4]")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p[5]")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p[6]")).click();
-    driver.findElement(By.xpath("//div[@id='contact-form-2599']/blockquote/p[7]")).click();
-* */
-    //------------------------
-
-
-    @FindBy(xpath = "//a[text()='Add to cart']")
-    public WebElement buttonAddCart;
-
-    @FindBy(id = "cartur")
-    public WebElement linkCart;
-
-    @FindBy(id = "tbodyid")
-    public WebElement containerProduct;
-    @FindBy(xpath = "//button[text()='Place Order']")
-    public WebElement buttonPlaceOrder;
-    @FindBy(id = "name")
-    public WebElement nameTxt;
-    @FindBy(id="country")
-    public WebElement countryTxt;
-    @FindBy(id = "city")
-    public WebElement cityTxt;
-    @FindBy(id = "card")
-    public WebElement cardTxt;
-    @FindBy(id="month")
-    public WebElement monthTxt;
-    @FindBy(id = "year")
-    public WebElement yeartxt;
-    @FindBy(xpath = "//button[text()='Purchase']")
-    public WebElement buttonPurchase;
-    @FindBy(xpath = "//p[@class='lead text-muted ']")
-    public WebElement valueOrder;
 
 }
